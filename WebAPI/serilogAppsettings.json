@@ -1,0 +1,15 @@
+﻿{
+  "Serilog": {
+   "Using": [ "Serilog.Sinks.File" ],
+    "WriteTo": [
+      {
+        "Name": "File",
+        "Args": {
+          "$path": "Logs/SerilogLogs-.txt",
+          "rollingInterval": "Day",
+          "shared": "true" // enable multi-process shared log files
+        }
+      }
+    ]
+  }
+}//E:\projects\c#_projects\DotNetLab\DotNetLabTemplate\DotNetLabTemplate\WebAPI\Logs\
